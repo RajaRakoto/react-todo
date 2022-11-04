@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+@import './sass/buttons';
+
+ul li {
+	list-style-type: none;
+}
+
+.task-item {
+	margin: 10px;
+	padding: 10px;
+	border-radius: 5px;
+	transition: 0.5s;
+	min-width: 280px;
+
+	&:hover {
+		background-color: rgba(192, 192, 192, 0.274);
+	}
+}
