@@ -1,0 +1,66 @@
+{
+	"name": "react-todo",
+	"description": "Todo-list with React.js (CRUD)",
+	"version": "0.1.0",
+	"private": true,
+	"dependencies": {
+		"@picocss/pico": "^1.5.6",
+		"@testing-library/jest-dom": "^5.16.4",
+		"@testing-library/react": "^13.1.1",
+		"@testing-library/user-event": "^13.5.0",
+		"react": "^18.1.0",
+		"react-dom": "^18.1.0",
+		"react-scripts": "5.0.1",
+		"web-vitals": "^2.1.4"
+	},
+	"scripts": {
+		"start": "react-scripts start",
+		"build": "react-scripts build",
+		"test": "react-scripts test",
+		"eject": "react-scripts eject",
+		"backups-all": "grunt compress-all",
+		"backups-quick": "grunt compress-quick",
+		"sasseo-install": "npm i @raja_rakoto/sass-eo --save-dev",
+		"sasseo-deps": "npm i grunt grunt-contrib-sass grunt-contrib-watch grunt-shell load-grunt-tasks sassdoc -D",
+		"sasseo-update": "npm update @raja_rakoto/sass-eo",
+		"sasseo-init-cli": "grunt --gruntfile ./node_modules/@raja_rakoto/sass-eo/config/gen.cjs generate-sasseo-cli",
+		"sasseo-start-cli": "grunt --gruntfile sass-eo-cli.js",
+		"sasseo-watch": "grunt --gruntfile sass-eo-cli.js watch-sass",
+		"sasseo-docs-basics": "grunt --gruntfile sass-eo-cli.js sseo-docs",
+		"sasseo-docs-loaders": "grunt --gruntfile sass-eo-cli.js loaders-docs",
+		"sasseo-docs-magic": "grunt --gruntfile sass-eo-cli.js magic-docs",
+		"sasseo-docs-milligrid": "grunt --gruntfile sass-eo-cli.js milligrid-docs",
+		"sasseo-config-hamburgers": "grunt --gruntfile sass-eo-cli.js hamburgers-config",
+		"sasseo-app-gridmaker": "grunt --gruntfile sass-eo-cli.js grid-maker",
+		"sasseo-app-flexboxmaker": "grunt --gruntfile sass-eo-cli.js flexbox-maker",
+		"sasseo-app-boxshadowmaker": "grunt --gruntfile sass-eo-cli.js boxshadow-maker"
+	},
+	"eslintConfig": {
+		"extends": [
+			"react-app",
+			"react-app/jest"
+		]
+	},
+	"browserslist": {
+		"production": [
+			">0.2%",
+			"not dead",
+			"not op_mini all"
+		],
+		"development": [
+			"last 1 chrome version",
+			"last 1 firefox version",
+			"last 1 safari version"
+		]
+	},
+	"devDependencies": {
+		"@raja_rakoto/sass-eo": "^1.7.1",
+		"grunt": "^1.5.3",
+		"grunt-contrib-compress": "^2.0.0",
+		"grunt-contrib-sass": "^2.0.0",
+		"grunt-contrib-watch": "^1.1.0",
+		"grunt-shell": "^4.0.0",
+		"load-grunt-tasks": "^5.1.0",
+		"sassdoc": "^2.7.4"
+	}
+}
